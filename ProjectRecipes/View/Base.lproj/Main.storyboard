@@ -416,7 +416,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chop" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-0S-eeu">
-                                <rect key="frame" x="20" y="127" width="242" height="34"/>
+                                <rect key="frame" x="20" y="127" width="236" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -434,14 +434,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-xF-IKf">
-                                <rect key="frame" x="270" y="126" width="34" height="34.5"/>
-                                <color key="tintColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="1h6-na-84J"/>
-                                    <constraint firstAttribute="width" constant="34" id="aQx-ox-dDv"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFH-kz-Vyy">
                                 <rect key="frame" x="20" y="54" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -488,6 +480,17 @@
                                     <color key="titleColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdD-si-Dox">
+                                <rect key="frame" x="266" y="127" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Dau-f0-mO1"/>
+                                    <constraint firstAttribute="height" constant="34" id="MGg-mg-GNQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tx5-nD-MNc" kind="show" id="pwD-5x-Len"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -499,17 +502,16 @@
                             <constraint firstItem="P1o-2D-66g" firstAttribute="top" secondItem="OZR-io-4j3" secondAttribute="bottom" constant="8" id="93d-yT-LdO"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="OZR-io-4j3" secondAttribute="trailing" constant="20" id="BwS-I3-Wd0"/>
                             <constraint firstItem="Ipx-id-p1K" firstAttribute="top" secondItem="I5h-vv-xAj" secondAttribute="bottom" constant="23" id="Cyh-Ns-eGI"/>
+                            <constraint firstItem="RdD-si-Dox" firstAttribute="bottom" secondItem="Yic-0S-eeu" secondAttribute="bottom" id="DTa-QM-VVb"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="bvr-uW-2uf" secondAttribute="trailing" constant="20" id="E5H-Ga-zFU"/>
                             <constraint firstItem="Yic-0S-eeu" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="Fd0-gM-MI7"/>
+                            <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="RdD-si-Dox" secondAttribute="trailing" constant="20" id="GwA-IR-CRU"/>
                             <constraint firstItem="GFH-kz-Vyy" firstAttribute="top" secondItem="Ieu-6o-s8h" secondAttribute="top" constant="10" id="JfL-zz-dUb"/>
-                            <constraint firstItem="DAL-xF-IKf" firstAttribute="leading" secondItem="Yic-0S-eeu" secondAttribute="trailing" constant="8" id="KGc-cT-MQq"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="Ipx-id-p1K" secondAttribute="trailing" constant="20" id="N2D-1U-Rh1"/>
                             <constraint firstItem="0tJ-yh-brG" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" id="PdI-rs-u82"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="P1o-2D-66g" secondAttribute="trailing" constant="20" id="SSX-XP-sd8"/>
                             <constraint firstItem="GFH-kz-Vyy" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="YHs-uB-cwO"/>
-                            <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="DAL-xF-IKf" secondAttribute="trailing" constant="16" id="ZSl-eh-cBD"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="bottom" secondItem="0tJ-yh-brG" secondAttribute="bottom" constant="20" id="ZiB-jE-b2U"/>
-                            <constraint firstItem="DAL-xF-IKf" firstAttribute="top" secondItem="GFH-kz-Vyy" secondAttribute="bottom" constant="43" id="Zib-br-hn6"/>
                             <constraint firstItem="OZR-io-4j3" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="acl-0o-Nkp"/>
                             <constraint firstItem="I5h-vv-xAj" firstAttribute="top" secondItem="bvr-uW-2uf" secondAttribute="bottom" constant="8" id="c9C-tg-qM7"/>
                             <constraint firstItem="teo-kD-pcU" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="dbF-J8-a6q"/>
@@ -517,6 +519,7 @@
                             <constraint firstItem="Ipx-id-p1K" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="jeM-oh-zCP"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="I5h-vv-xAj" secondAttribute="trailing" constant="20" id="mOT-6b-iPa"/>
                             <constraint firstItem="gTS-k0-APl" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="mm0-DE-wRp"/>
+                            <constraint firstItem="RdD-si-Dox" firstAttribute="leading" secondItem="Yic-0S-eeu" secondAttribute="trailing" constant="10" id="mr7-rQ-rUW"/>
                             <constraint firstItem="Ieu-6o-s8h" firstAttribute="trailing" secondItem="teo-kD-pcU" secondAttribute="trailing" constant="20" id="n3f-7s-c9L"/>
                             <constraint firstItem="OZR-io-4j3" firstAttribute="top" secondItem="teo-kD-pcU" secondAttribute="bottom" constant="23" id="s2O-qF-DaX"/>
                             <constraint firstItem="I5h-vv-xAj" firstAttribute="leading" secondItem="Ieu-6o-s8h" secondAttribute="leading" constant="20" id="tN2-io-JYn"/>
@@ -533,22 +536,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="OnImageViewPressed" destination="DAL-xF-IKf" id="teP-bf-yXD"/>
                         <outlet property="descriptionTextField" destination="teo-kD-pcU" id="Uot-lS-Zv6"/>
                         <outlet property="ingredientsTextField" destination="P1o-2D-66g" id="Qff-aT-oXS"/>
                         <outlet property="nameTextField" destination="I5h-vv-xAj" id="qBr-l6-Qkt"/>
                         <outlet property="typeTextField" destination="Yic-0S-eeu" id="4mZ-Ye-fFQ"/>
-                        <segue destination="tx5-nD-MNc" kind="show" id="nFh-sT-xab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQU-hY-Kv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3787.5" y="134.1549295774648"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Step Description Image Table View Controller-->
         <scene sceneID="jLl-BA-yzN">
             <objects>
-                <tableViewController id="tx5-nD-MNc" sceneMemberID="viewController">
+                <tableViewController id="tx5-nD-MNc" customClass="StepDescriptionImageTableViewController" customModule="ProjectRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZDp-jl-YVc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,7 +603,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flame" catalog="system" width="109" height="128"/>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="person" catalog="system" width="128" height="117"/>

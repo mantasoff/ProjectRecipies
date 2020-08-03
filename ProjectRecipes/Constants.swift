@@ -12,6 +12,7 @@ struct K {
     struct cellNames {
         static let recipeCellName = "RecipeCellName"
         static let preparationStepCellName = "PreparationStepCellName"
+        static let stepDescriptionImageCellName = "StepDescriptionImageCell"
     }
     
     struct segues {
